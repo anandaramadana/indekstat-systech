@@ -1,15 +1,25 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
 
 @theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --color-orange-500: #F05B24;
+
+  --font-primary: 'Karla', sans-serif;
 }
 
-html,
-body {
-  @apply bg-white dark:bg-gray-950;
-
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
+.swiper-pagination {
+  bottom: -5px !important;
 }
+
+/* di globals.css / style.css */
+.layanan-swiper .swiper-button-next,
+.layanan-swiper .swiper-button-prev {
+  color: white;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+
+
+
